@@ -1,0 +1,1 @@
+const mobile_nav = document.querySelector(".mobi;")
