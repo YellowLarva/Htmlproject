@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">
+        Press buttons to see the changes
+    </p>
+
+    <button onclick="changecolor(this.id)" id="b1">RED</button>
+    <button onclick="changecolor(this.id)" id="b2">GREEN</button>
+    <button onclick="changecolor(this.id)" id="b3">BLUE</button>
+
+    <br><br>
+
+    <button onclick="changefont(this.id)" id="b4">20</button>
+    <button onclick="changefont(this.id)" id="b5">30</button>
+    <button onclick="changefont(this.id)" id="b6">40</button>
+
+    <br><br>
+
+    <button onclick="changefontfamily(this.id)" id="b7">Times New Roman</button>
+    <button onclick="changefontfamily(this.id)" id="b8">Courier</button>
+    <button onclick="changefontfamily(this.id)" id="b9">Calibri</button>
+
+    <script>
+        function changecolor(clickedID){
+            var colorName = document.getElementById(clickedID).textContent;
+            document.getElementById('para').style.color=colorName;
+        }
+        function changefont(clickedID){
+            var fsize = document.getElementById(clickedID).textContent;
+            document.getElementById('para').style.fontSize=fsize+'px';
+        }
+        function changefontfamily(clickedID){
+            var fontfamily = document.getElementById(clickedID).textContent;
+            document.getElementById('para').style.fontFamily=fontfamily;
+        }
+    </script>
+
+</body>
+</html>

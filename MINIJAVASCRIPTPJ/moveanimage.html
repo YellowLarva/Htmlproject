@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var padding = 0;
+        flag = true;
+        var moveimage; 
+        function start(){
+            moveimage = setInterval(move,400);
+        }
+
+        function move(){            
+            var maxwidth = window.innerWidth;
+            if ( padding <= maxwidth && flag == true){
+                padding+=40;
+                document.getElementById('image').style.paddingLeft = padding+'px';
+                if(padding > maxwidth){
+                    flag = false;
+                }
+            }
+            if ( flag == false){
+                padding-=40;
+                document.getElementById('image').style.paddingLeft = padding+'px';
+                if(padding==0){
+                    flag = true;
+                }
+            }
+        }
+
+        function stop(){
+            clearInterval(moveimage);
+        }
+
+        function restart(){
+            padding = 0;
+            start();
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <div>
+        <img src="C:\Users\admin\OneDrive\Documents\27oct\certificate\basic\Navneet.jpg" alt="" width="400px" height="350px" id="image">
+        <br>
+        <button onclick="start()">MOVE</button>
+        <button onclick="stop()">STOP</button>
+        <button onclick="restart()">RESTART</button>
+    </div>
+</body>
+</html>

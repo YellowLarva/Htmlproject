@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        var textarr = [];
+
+        function pushtext(){
+            let string = document.getElementById('TB').value;
+            if (string != ""){
+                console.log(string);
+                textarr.push(string+'\n');
+                document.getElementById('TA').value=textarr;
+                document.getElementById('TB').value='';
+            }
+        }
+
+        function poptext(){
+            if (textarr != ""){
+                alert(textarr.pop())
+                console.log(textarr)
+                document.getElementById('TA').value=textarr;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div id="cont">
+        <input type="text" id="TB">
+        <button onclick="pushtext()">PUSH</button>
+        <button onclick="poptext()">POP</button>
+        <br> <br>
+        <textarea  id="TA"></textarea>
+
+    </div>
+</body>
+</html>
