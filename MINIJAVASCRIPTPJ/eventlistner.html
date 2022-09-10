@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="para">he internet is the network of networks and the network allows to exchange of data between two or more computers. The web is a way to access
+        information through the internet. It is also known as the network of networks. The web is a model for sharing information using the internet.
+    </p>
+
+    <br> <br>
+
+    <input type="button" value="RED" class="color"/>
+    <input type="button" value="GREEN" class="color"/>
+    <input type="button" value="BLUE" class="color"/>
+    <br> <br>
+    <input type="button" value="10" class="digit"/>
+    <input type="button" value="20" class="digit"/>
+    <input type="button" value="30" class="digit"/>
+    <br> <br>
+    <input type="button" value="IMPACT" class="lang"/>
+    <input type="button" value="VERDANA" class="lang"/>
+    <input type="button" value="INK FREE" class="lang"/>
+
+    <script>
+        function fontColor() {
+            document.getElementById("para").style.color = this.value ;
+        }
+
+        function fontSize() {
+            document.getElementById("para").style.fontSize = this.value + 'px' ;
+        }
+
+        function fontStyle() {
+            document.getElementById("para").style.fontFamily = this.value ;
+        }
+        
+        for(var i=0 ; i<3 ; i++) {
+            document.getElementsByClassName('color')[i].addEventListener("click", fontColor) ;
+            document.getElementsByClassName('digit')[i].addEventListener("click", fontSize) ;
+            document.getElementsByClassName('lang')[i].addEventListener("click", fontStyle) ;
+        }
+    </script>
+</body>
+</html>
