@@ -1,0 +1,536 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2020/07/27/14/34/forest-5442598_1280.jpg');
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* .head{
+    background-color: rgb(37, 9, 37);
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 120vh 30vh;
+    margin-bottom: 3rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+} */
+
+#welhead{
+    text-align: center; 
+    justify-content: center;
+    width: 50%;
+    margin-left: auto; 
+    margin-right: auto;
+    font-size:1.5rem;
+    margin-top:2rem;
+}
+
+.head{
+    background-color: rgb(37, 9, 37);
+    color: white;
+    /* height: 65px; */
+    font-size: 1.5rem;
+    padding: 4%;
+    display: flex;
+    gap: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    /* grid-template-columns: auto auto; */
+    margin-bottom: 1rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+
+.head > div{
+    display: flex;
+    gap: 2rem
+}
+
+.head > p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/* sign in formmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm cccccccccccccssssssssssssssssssssssssssssssssssssss */
+
+/* * {box-sizing: border-box} */
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.signupbtn {
+    padding: 14px 20px;
+    background-color: lightskyblue;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 90%;
+}
+
+/* Add padding to container elements */
+.containersignin {
+  padding: 14px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border:1px solid #ccc;
+}
+
+
+/* Clear floats */
+.clearfix{
+  /* display: table; */
+  display: grid;
+  grid-template-columns: auto 1rem auto;
+}
+
+#signupcon{
+    width: 40rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rem;
+    display: none;
+}
+
+#signincon{
+    width: 40rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rem;
+    display: none;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+/* sign in formmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm cccccccccccccssssssssssssssssssssssssssssssssssssss */
+
+
+
+
+
+
+.gameContainer{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 5%;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 4px solid whitesmoke;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.box:hover{
+    background-color: rgb(242, 234, 250);
+}
+
+.info,.chose {
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #f3e7f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    font-weight: bolder;
+    visibility: hidden;
+}
+
+#sccreset{
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #f3e7f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#scresetdiv{
+    text-align: center;
+}
+
+#showAlert{
+    text-align: center;
+}
+
+button {
+    background: cornflowerblue;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Lato';
+    margin: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: orange;
+}
+
+#showAl{
+    font-size: 2rem;
+    background: #f3e7f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-weight: bolder;
+}
+
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+.scorecard{
+    color: #f3e7f9;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-rows: repeat(2, 3rem);
+    grid-template-columns: repeat(3, 10rem);
+    text-align: center;
+    
+}
+
+#sccard{
+    color: #f3e7f9;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .gameInfo{
+        margin-top: 5rem;
+        margin-left: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    *{
+        padding-left: 1.5rem;
+    }
+
+    .box{
+        font-size: 2.5rem;
+        padding: 0%;
+    }
+
+    .boxtext{
+        padding: 0%;
+    }
+
+    /* .head{
+        display: grid;
+        grid-template-columns: 60vh 40vh;
+        font-size: 1.5rem;
+    } */
+
+    #signupcon{
+        width: 120%;
+        margin:0%;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        /* margin-left: 20rem; */
+        display: none;
+    }
+    
+    .containersignin {
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    
+    .clearfix{
+        padding-left: 0%;
+    }
+    
+    #signincon{
+        width: 120%;
+        margin:0%;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        display: none;
+    }
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 90%;
+      /* padding: 15px; */
+      margin: 5px 0 15px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    label{
+        padding: 0%;
+    }
+    
+    label > b {
+        padding: 0%;
+    }
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    button:hover {
+      opacity:1;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+    
+    .signupbtn {
+        padding: 14px 20px;
+        background-color: lightskyblue;
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 90%;
+    }
+    
+    /* Add padding to container elements */
+    .containersignin {
+      padding: 14px;
+      color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+    /* Clear floats */
+    .clearfix{
+      /* display: table; */
+      display: grid;
+      grid-template-columns: auto 1rem auto;
+    }
+
+    .containersignin > h1,p{
+        padding: 0%;
+    }
+
+    .head{
+        background-color: rgb(37, 9, 37);
+        color: white;
+        /* height: 65px; */
+        font-size: 1.5rem;
+        padding: 4%;
+        display: flex;
+        gap: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150%;
+        /* grid-template-columns: auto auto; */
+        margin-bottom: 1rem;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    #welhead{
+        width: 120%;
+    }
+    
+
+    .tttt{
+        margin: 10px;
+        width: 50%;
+        color: white;
+        border: 2px solid white;
+        font-size: 2px;
+    }
+
+}
+
+.swal-html-container, .swal-title{
+    color: white !important;
+    font-size: 2.5rem !important;
+    /* background-image: none !important; */
+}
+
+/* 
+table, th, td {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.tttt{
+    margin: 40px;
+    width: 90%;
+    color: white;
+    border: 2px solid white;
+    font-size: 2rem;
+    display: none;
+}
+
+
+#tablecontainer{
+    margin: 40px;
+    width: 90%;
+    color: white;
+    border: 2px solid white;
+    font-size: 2rem;
+    padding: 2rem;
+} */
+
+#sccreset{
+    display: none;
+}
